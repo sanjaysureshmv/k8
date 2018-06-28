@@ -1,0 +1,23 @@
+apiVersion: v1
+kind: ReplicationController
+metadata: 
+  name: my-replication-controller
+spec: 
+  replicas: 3
+  selector:
+    team: bus
+  template:
+    metadata:
+      labels:
+        vertical: travel
+        team: bus
+        version: "1.0"
+        app: nginx
+
+    spec: 
+      containers:
+        - name: nginx-container
+          image: nginx
+          ports:
+            - containerPort: 80
+    
