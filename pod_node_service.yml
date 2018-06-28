@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pody
+metadata: 
+  name: my-test-node-port
+  labels:
+    app: my-app
+spec:
+ - name: container_nginx
+   image: nginx 
+   ports:
+     - ContainerPort: 80
