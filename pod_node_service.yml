@@ -5,7 +5,8 @@ metadata:
   labels:
     app: my-app
 spec:
- - name: container_nginx
-   image: nginx 
-   ports:
-     - ContainerPort: 80
+  containers:
+   - name: container_nginx
+     image: nginx 
+     ports:
+       - ContainerPort: 80
