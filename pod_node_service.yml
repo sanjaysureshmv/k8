@@ -6,7 +6,7 @@ metadata:
     app: my-app
 spec:
   containers:
-   - name: container_nginx
+   - name: container-nginx
      image: nginx 
      ports:
        - containerPort: 80
