@@ -6,7 +6,7 @@ metadata:
     app: my-app
 spec:
   containers:
-   - name: container-nginx
-     image: nginx 
+   - name: apache
+     image: tomcat 
      ports:
-       - containerPort: 80
+       - containerPort: 8080
